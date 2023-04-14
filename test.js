@@ -27,7 +27,7 @@ function convertirBase(num, base, baseCambio) {
     modulos.unshift(modulo);
   } while (baseCambio <= division);
 
-  return `${division}${modulos.join("")}`;
+  return +`${division}${modulos.join("")}`;
 }
 
 console.log("conversión de base", convertirBase(253, 6, 4));
